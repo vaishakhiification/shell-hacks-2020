@@ -6,10 +6,16 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import {environment} from '../environments/environment';
+import { LoginComponent } from './components/login/login.component';
+import { SearchComponent } from './components/search/search.component';
+import {AppRoutingModule} from './app-routing.module';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +23,8 @@ import {environment} from '../environments/environment';
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFirestoreModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
