@@ -1,4 +1,4 @@
-class PostType{
-    id: number;
-    postTypeName: string;
+export class PostType {
+  id: string;
+  postTypeName: string;
 }

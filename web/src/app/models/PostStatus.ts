@@ -1,4 +1,4 @@
-class PostStatus{
-    id: number;
-    postStatusName: string;
+export class PostStatus {
+  id: string;
+  postStatusName: string;
 }

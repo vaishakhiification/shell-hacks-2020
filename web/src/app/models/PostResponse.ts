@@ -1,7 +1,7 @@
-class PostResponse{
-    id: string;
-    userName: string;
-    postId: string;
-    message: string;
-    baseAmount: string;
+export class PostResponse {
+  id: string;
+  userName: string;
+  postId: string;
+  message: string;
+  baseAmount: string;
 }
