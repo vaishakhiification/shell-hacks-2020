@@ -4,3 +4,4 @@ export * from './User';
 export * from './PostResponse';
 export * from './PostStatus';
 export * from './PostType';
+export * from './SearchParameters';
