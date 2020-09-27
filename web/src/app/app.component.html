@@ -1,4 +1,12 @@
 <div>
+  <div>
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1">{{title}}</span>
+    </nav>
+  </div>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
   <h1>AppComponent</h1>
   <agm-map [latitude]="position.latitude" [longitude]="position.longitude" style="height: 300px; width: 300px" [zoom]="10">
     <agm-marker [latitude]="position.latitude" [longitude]="position.longitude" [markerDraggable]="true"
