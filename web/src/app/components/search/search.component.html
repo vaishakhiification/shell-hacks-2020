@@ -1,54 +1,79 @@
 <div class="container">
-  <!--  <div class="search-box">-->
-  <!--    <label>-->
-  <!--      <input class="search-txt" name="" placeholder="Type to search">-->
-  <!--    </label>-->
-  <!--    <a class="search-btn" href="#">-->
-  <!--      <i class="fas fa-search"></i>-->
-  <!--    </a>-->
-  <!--  </div>-->
-  <!--  <div>-->
-  <!--    <button type="submit" class="btn btn-primary">Add</button>-->
-  <!--  </div>-->
-  <!--Modal-->
-  <!--  <ng-template #bookMentorModal let-modal>-->
-  <!--    <div class="modal-header">-->
-  <!--      <h4 class="modal-title" id="modal-basic-title">Book An Appointment!</h4>-->
-  <!--      <button (click)="modal.dismiss()" aria-label="Close" class="close" type="button">-->
-  <!--        <span aria-hidden="true">&times;</span>-->
-  <!--      </button>-->
-  <!--    </div>-->
-  <!--  </ng-template>-->
-  <!--<div class="modal-body">
-    <div class="form-group">
-      <ng-multiselect-dropdown
-        (onSelect)="onItemSelect($event)"
-        (onSelectAll)="onSelectAll($event)"
-        [(ngModel)]="selectedItems"
-        [data]="dropdownList"
-        [placeholder]="'Select your availability'"
-        [settings]="dropdownSettings"
-      >
-      </ng-multiselect-dropdown>
+  <div class="tab-wrap">
+    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked />
+    <label for="tab1">Help someone out?</label>
+
+    <input type="radio" id="tab2" name="tabGroup1" class="tab" />
+    <label for="tab2">In need of help?</label>
+  </div>
+
+  <div class="ft-recipe">
+    <div class="ft-recipe__thumb">
+      <img
+        src="https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg"
+        alt="Help with Groceries"
+      />
     </div>
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Message for the Mentor: (Optional)</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <div class="ft-recipe__content">
+      <header class="content__header">
+        <div class="row-wrapper">
+          <h2 class="recipe-title">Help with Groceries</h2>
+          <div class="user-rating"></div>
+        </div>
+        <ul class="recipe-details">
+          <li class="recipe-details-item time">
+            <i class="ion ion-ios-clock-outline"></i
+            ><span class="value">20</span><span class="title">Minutes</span>
+          </li>
+          <li class="recipe-details-item ingredients">
+            <i class="ion ion-ios-book-outline"></i><span class="value">5</span
+          ><span class="title">Ingredients</span>
+          </li>
+          <li class="recipe-details-item servings">
+            <i class="ion ion-ios-person-outline"></i
+            ><span class="value">40$</span
+          ><span class="title">Estimated Price</span>
+          </li>
+        </ul>
+      </header>
+      <p class="description">
+        Need help with groceries. Would like some Apples and Oranges and
+        Strawberries.
+      </p>
+      <footer class="content__footer"><a href="#">Help person</a></footer>
     </div>
+  </div>
+
+  <!-- <div class="search-box">
+    <input class="search-txt" name="" placeholder="Type to search" />
+    <a class="search-btn" href="#">
+      <i class="fas fa-search"></i>
+    </a>
+  </div>
+  <div>
+    <button id="submit" type="submit" class="btn btn-primary">Add</button>
   </div> -->
-  <!--  <div class="card" style="width: 18rem;">-->
-  <!--    <div class="card-body">-->
-  <!--      <h5 class="card-title">Card title</h5>-->
-  <!--      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
-  <!--      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's-->
-  <!--        content.</p>-->
-  <!--      <a href="#" class="card-link">Card link</a>-->
-  <!--      <a href="#" class="card-link">Another link</a>-->
-  <!--    </div>-->
-  <!--  </div>-->
+
+  <div class="wrap">
+    <div class="search">
+      <input
+        type="text"
+        class="searchTerm"
+        placeholder="What are you looking for?"
+      />
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<!--<div class="container">
   <app-post-search-sidebar [search]="setSearchParameter"></app-post-search-sidebar>
   <div *ngFor="let item of posts | requestFilter : searchParameter">
     <app-post-result [postInfo]="item"></app-post-result>
   </div>
 
-</div>
+</div>-->

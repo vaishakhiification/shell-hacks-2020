@@ -1,46 +1,61 @@
-<div class="container">
-  <h4>Login</h4>
+<div id="main">
+  <div id="login"></div>
+  <div id="home"></div>
+  <div id="login-container" class="container">
+    <h4>Login</h4>
 
-  <form ngForm (submit)="onSubmit()" #loginForm="ngForm">
-    <div class="form-group">
-      <label for="txtUserName">Username</label>
-      <input
-        ngModel
-        type="text"
-        class="form-control"
-        name="username"
-        id="txtUserName"
-        [(ngModel)]="credentials.userName"
-        #username="ngModel"
-        required>
-      <div *ngIf="username.invalid && (username.dirty || username.touched)"
-           class="alert alert-danger">
-        <div *ngIf="username.errors.required">
-          Username is required.
+    <form ngForm (submit)="onSubmit()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="txtUserName">Username</label>
+        <input
+          ngModel
+          type="text"
+          class="form-control"
+          name="username"
+          id="txtUserName"
+          [(ngModel)]="credentials.userName"
+          #username="ngModel"
+          required
+        />
+        <div
+          *ngIf="username.invalid && (username.dirty || username.touched)"
+          class="alert alert-danger"
+        >
+          <div *ngIf="username.errors.required">Username is required.</div>
         </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for="txtPassword">Password</label>
-      <input type="password"
-             ngModel
-             class="form-control"
-             id="txtPassword"
-             [(ngModel)]="credentials.password"
-             name="password"
-             #password = "ngModel"
-             required>
-      <div *ngIf="password.invalid && (password.dirty || password.touched)"
-           class="alert alert-danger">
-        <div *ngIf="password.errors.required">
-          Password is required.
+      <div id="password" class="form-group">
+        <label for="txtPassword">Password</label>
+        <input
+          type="password"
+          ngModel
+          class="form-control"
+          id="txtPassword"
+          [(ngModel)]="credentials.password"
+          name="password"
+          #password="ngModel"
+          required
+        />
+        <div
+          *ngIf="password.invalid && (password.dirty || password.touched)"
+          class="alert alert-danger"
+        >
+          <div *ngIf="password.errors.required">Password is required.</div>
         </div>
       </div>
-    </div>
-    <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
-  </form>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="loginForm.invalid"
+      >
+        Login
+      </button>
+    </form>
+  </div>
 </div>
+<div id="page-scroll"></div>
+
 <!--<div class="container">
   <div
     class="container d-flex flex-column flex-md-row align-items-center p-3"
@@ -168,4 +183,49 @@
 <script>
     $('[data-toggle="tooltip"]').tooltip();
 </script>
+</div>-->
+
+
+<!--div class="container">
+  <h4>Login</h4>
+
+  <form ngForm (submit)="onSubmit()" #loginForm="ngForm">
+    <div class="form-group">
+      <label for="txtUserName">Username</label>
+      <input
+        ngModel
+        type="text"
+        class="form-control"
+        name="username"
+        id="txtUserName"
+        [(ngModel)]="credentials.userName"
+        #username="ngModel"
+        required>
+      <div *ngIf="username.invalid && (username.dirty || username.touched)"
+           class="alert alert-danger">
+        <div *ngIf="username.errors.required">
+          Username is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="txtPassword">Password</label>
+      <input type="password"
+             ngModel
+             class="form-control"
+             id="txtPassword"
+             [(ngModel)]="credentials.password"
+             name="password"
+             #password = "ngModel"
+             required>
+      <div *ngIf="password.invalid && (password.dirty || password.touched)"
+           class="alert alert-danger">
+        <div *ngIf="password.errors.required">
+          Password is required.
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+  </form>
 </div>-->
