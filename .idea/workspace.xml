@@ -19,14 +19,22 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/frontend-dev" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ed6e06f-91ea-412e-be78-f897ee14d910" name="Default Changelist" comment="Google Maps + utils" />
+    <list default="true" id="1ed6e06f-91ea-412e-be78-f897ee14d910" name="Default Changelist" comment="Error fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/node_modules/__ngcc_entry_points__.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/node_modules/__ngcc_entry_points__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/components/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/components/search/search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/components/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/components/search/search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/models/SearchParameters.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/models/SearchParameters.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +65,12 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/web/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/src/app/components/post-result" />
+      <recent name="$PROJECT_DIR$/web/src/app/components" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601147533150</updated>
-      <workItem from="1601147534721" duration="5225000" />
+      <workItem from="1601147534721" duration="14853000" />
     </task>
     <task id="LOCAL-00001" summary="Adding export to models">
       <created>1601147925091</created>
@@ -88,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601182944064</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Google Maps + utils">
+      <created>1601183107178</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601183107178</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Error fixes">
+      <created>1601183253406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601183253406</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,7 +133,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/frontend-dev" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -120,7 +148,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding export to models" />
     <MESSAGE value="Google Maps + utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="Google Maps + utils" />
+    <MESSAGE value="Error fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Error fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1601182627745">
@@ -135,14 +164,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="358" y="218" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1601183079875" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1601182953531">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1601183980181">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601182953531" />
-    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601183095617">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601183980181" />
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601183233666">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1601183095617" />
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1601183233666" />
+    <state x="592" y="344" width="350" height="300" key="org.angular.cli.generate" timestamp="1601192573767">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="592" y="344" width="350" height="300" key="org.angular.cli.generate/0.0.1440.900@0.0.1440.900" timestamp="1601192573767" />
     <state x="82" y="213" key="vcs.ApplyPatchDifferentiatedDialog" timestamp="1601182753025">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

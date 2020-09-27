@@ -16,6 +16,9 @@ import {ViewPostComponent} from './components/view-post/view-post.component';
 import {RespondPostComponent} from './components/respond-post/respond-post.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {AgmCoreModule} from '@agm/core';
+import { RequestFilterPipe } from './pipes/requestFilter/request-filter.pipe';
+import { PostResultComponent } from './components/post-result/post-result.component';
+import { PostSearchSidebarComponent } from './components/post-search-sidebar/post-search-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import {AgmCoreModule} from '@agm/core';
     SearchComponent,
     CreatePostComponent,
     ViewPostComponent,
-    RespondPostComponent
+    RespondPostComponent,
+    RequestFilterPipe,
+    PostResultComponent,
+    PostSearchSidebarComponent
   ],
   imports: [
     BrowserModule,

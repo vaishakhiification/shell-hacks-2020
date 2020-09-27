@@ -1,5 +1,5 @@
 export class SearchParameters{
-    categoryId: number;
-    postTypeId: number;
+    categoryId: string;
+    postTypeId: string;
     keyword: string;
 }
