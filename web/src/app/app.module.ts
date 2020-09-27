@@ -11,12 +11,18 @@ import { SearchComponent } from './components/search/search.component';
 import {AppRoutingModule} from './app-routing.module';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { CreatePostComponent } from './components/create-post/create-post.component';
+import { ViewPostComponent } from './components/view-post/view-post.component';
+import { RespondPostComponent } from './components/respond-post/respond-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SearchComponent
+    SearchComponent,
+    CreatePostComponent,
+    ViewPostComponent,
+    RespondPostComponent
   ],
   imports: [
     BrowserModule,
