@@ -13,4 +13,6 @@ export class Post {
   postType: string;
   category: string;
   postStatus: string;
+  latitude:number;
+  longitude: number;
 }

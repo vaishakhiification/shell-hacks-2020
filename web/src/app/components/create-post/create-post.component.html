@@ -1,37 +1,39 @@
 <div class="container">
-    <h4>POST</h4>
-    <form ngForm #createPostForm="ngForm">
-        <div class="form-group">
-          <label for="txtTitle">Title</label>
-          <input
-            ngModel
-            type="text"
-            class="form-control"
-            name=title
-            id="txtTitle"
-            required/>
-          </div>
-        <div class="form-group">
-          <label for="txtDescription">Description</label>
-          <input type="text"
-                 ngModel
-                 class="form-control"
-                 id="txtDescription"
-                 name="description"
-                 required>
-        </div>
-        <div class="form-group">
-            <label for="txtBaseAmount">Base Amount</label>
-            <input type="number"
-                   ngModel
-                   class="form-control"
-                   id="txtBaseAmount"
-                   name="baseAmount"
-                   required/>
-          </div>
-        <div>
-            <div><button type="submit" class="btn btn-primary">Cancel</button></div>
-            <div><button type="submit" class="btn btn-primary">Submit</button></div>
-        </div>
-      </form>
+	<h4>POST</h4>
+	<form ngForm>
+		<div class="form-group">
+			<label for="drpPostType">Post Type</label>
+			<select class="form-control" id="drpPostType" name="postType" [(ngModel)]="newPost.postTypeId" required>
+				<option value="1">Request</option>
+				<option value="2">Assist</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="drpPostCategory">Post Category</label>
+			<select class="form-control" id="drpPostCategory" name="postCategory" [(ngModel)]="newPost.categoryId" required>
+				<option value="1">Grocery</option>
+				<option value="2">Print & Scan</option>
+				<option value="3">Ride share</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="txtTitle">Title</label>
+			<input ngModel type="text" class="form-control" name="title" maxlength="40" id="txtTitle" [(ngModel)]="newPost.title" required/> </div>
+		<div class="form-group">
+			<label for="textDescription">Description</label>
+			<textarea class="form-control" id="txtDescription" rows="3" [(ngModel)]="newPost.description" name="description" required></textarea>
+		</div>
+		<div class="form-group">
+			<label for="txtBaseAmount">Base Amount</label>
+			<input type="number" ngModel class="form-control" id="txtBaseAmount" [(ngModel)]="newPost.baseAmount" name="baseAmount" required/> </div>
+		<div>
+			<agm-map [latitude]="position.latitude" [longitude]="position.longitude" style="height: 300px; width: 300px" [zoom]="10">
+				<agm-marker [latitude]="position.latitude" [longitude]="position.longitude" [markerDraggable]="true" (markerClick)="selectMarker($event)"> </agm-marker>
+			</agm-map>
+		</div>
+		<div> 
+      <span><button type="submit" (click)="navigateBack()"class="btn btn-primary">Cancel</button>
+      </span> <span><button type="submit" (click)="createPost()" class="btn btn-primary">Post</button></span> 
+    </div>
+	</form>
 </div>
