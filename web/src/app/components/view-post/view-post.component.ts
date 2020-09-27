@@ -55,8 +55,7 @@ export class ViewPostComponent implements OnInit {
   }
 
   sendResponse(){
-    debugger;
-   this.postResponse = new PostResponse(this.constantService.currentUser.userName, this.currentPost.id,
+   this.postResponse = new PostResponse(this.constantService.currentUser, this.currentPost.id,
                         this.responseMessage, this.responseAmount);
     this.dataService.createPostResponse(this.postResponse);
     this.responseSuccessAlert = true;

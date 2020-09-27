@@ -3,6 +3,7 @@ import {User} from "../../models";
 import {DataService} from '../../services/data.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {Credentials} from "../../models/Credentials";
+import { ConstantService } from 'src/app/services/constant.service';
 
 @Component({
   selector: 'app-login',
@@ -13,17 +14,18 @@ export class LoginComponent implements OnInit {
   user: User;
   credentials:Credentials;
 
-  constructor(private dataService:DataService, private route: ActivatedRoute, private router: Router) {
+  constructor(private dataService:DataService, private route: ActivatedRoute, private router: Router,private constantService: ConstantService) {
     this.credentials = new Credentials();
   }
 
   onSubmit() {
-    console.log(this.credentials.password)
-    //TODO null check
     this.dataService.getUser(this.credentials.password,this.credentials.userName).subscribe(res => {
       this.user = res;
-      console.log(this.user.city);
-      this.router.navigate(['/search']);
+      if(this.user!=null){
+        this.constantService.currentUser = this.user.userName;
+        this.router.navigate(['/search']);
+      }
+
     });
   }
 
