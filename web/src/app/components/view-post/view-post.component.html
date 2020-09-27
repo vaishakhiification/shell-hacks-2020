@@ -1,1 +1,36 @@
-<p>view-post works!</p>
+<div class="container">
+    <div>Title</div>
+    <div>Description</div>
+    <div>Base Amount: 
+        <span>$20</span>
+    </div>
+    <div>
+        <span><button type="submit" class="btn btn-primary">Back</button></span>
+        <span><button type="submit" class="btn btn-primary" (click)="open(respondModal)">Respond</button></span>
+        <!-- data-toggle="modal" data-target="#myModal" -->
+    </div>
+</div>
+<ng-template #respondModal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Respond to the post!</h4>
+      <button (click)="modal.dismiss()" aria-label="Close" class="close" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message: </label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea2">Base Amount: </label>
+        <input type="number" class="form-control" id="exampleFormControlTextare21"/>
+      </div>
+    </div>
+  
+    <div class="modal-footer">
+      <button (click)="modal.close('Save click')" class="btn btn-outline-dark" type="button">Book</button>
+      <button (click)="modal.dismiss()" class="btn btn-outline-dark" type="button">Cancel</button>
+    </div>
+  </ng-template>
+    
