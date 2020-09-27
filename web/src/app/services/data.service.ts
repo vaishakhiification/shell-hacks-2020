@@ -80,11 +80,12 @@ import  { PostType, Post, PostStatus, Category, PostResponse, User, SearchParame
     }
 
     createPostResponse(postResponse: PostResponse){
-      this.db.collection('postResponse').add(postResponse);
+      debugger;
+      this.db.collection('postResponse').add({...postResponse});
     }
 
     createPost(post: Post){
-        this.db.collection('posts').add(post);
+        this.db.collection('posts').add({...post});
     }
 
 

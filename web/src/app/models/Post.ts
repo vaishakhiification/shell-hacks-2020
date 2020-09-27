@@ -1,13 +1,16 @@
 export class Post {
   id: string;
   authorName: string;
-  postTypeId: number;
-  categoryId: number;
+  postTypeId: string;
+  categoryId: string;
   title: string;
   description: string;
   baseAmount: number;
-  postStatusId: number;
+  postStatusId: string;
   responderName: string;
   responderApproved: boolean;
   authorApproved: boolean;
+  postType: string;
+  category: string;
+  postStatus: string;
 }

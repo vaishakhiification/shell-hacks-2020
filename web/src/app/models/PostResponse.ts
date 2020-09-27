@@ -3,5 +3,12 @@ export class PostResponse {
   userName: string;
   postId: string;
   message: string;
-  baseAmount: string;
+  baseAmount: number;
+
+  constructor(userName,postId,message,baseAmount){
+    this.userName = userName;
+    this.postId = postId;
+    this.message = message;
+    this.baseAmount = baseAmount;
+  }
 }
