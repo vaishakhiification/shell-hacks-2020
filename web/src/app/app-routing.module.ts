@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'search', component: SearchComponent},
   {path: 'createpost', component: CreatePostComponent},
-  {path: 'viewpost', component: ViewPostComponent},
+  {path: 'viewpost/:id', component: ViewPostComponent},
   {path: 'respondpost', component: RespondPostComponent}
 ];
 

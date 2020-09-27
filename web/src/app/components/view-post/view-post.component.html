@@ -1,18 +1,24 @@
 <div class="container">
-    <div>Title</div>
-    <div>Description</div>
+    <div class="alert alert-success alert-dismissible" role="alert" *ngIf="responseSuccessAlert">
+        <strong>Response Sent!!</strong>
+        <button type="button" (click)="navigateToSearchPage()" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div>{{this.currentPost.title}}</div>
+    <div>{{this.currentPost.description}}</div>
     <div>Base Amount: 
-        <span>$20</span>
+        <span *ngIf="this.currentPost.baseAmount">${{this.currentPost.baseAmount}}</span>
+        <span *ngIf="!this.currentPost.baseAmount">Not specified</span>
     </div>
     <div>
-        <span><button type="submit" class="btn btn-primary">Back</button></span>
+        <span><button type="submit" class="btn btn-primary" (click)="navigateToSearchPage()">Back</button></span>
         <span><button type="submit" class="btn btn-primary" (click)="open(respondModal)">Respond</button></span>
-        <!-- data-toggle="modal" data-target="#myModal" -->
     </div>
 </div>
 <ng-template #respondModal let-modal>
     <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Respond to the post!</h4>
+      <h4 class="modal-title" id="modal-basic-title">Send your response!!</h4>
       <button (click)="modal.dismiss()" aria-label="Close" class="close" type="button">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -20,16 +26,16 @@
     <div class="modal-body">
       <div class="form-group">
         <label for="exampleFormControlTextarea1">Message: </label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" [(ngModel)]="responseMessage" rows="3"></textarea>
       </div>
       <div class="form-group">
         <label for="exampleFormControlTextarea2">Base Amount: </label>
-        <input type="number" class="form-control" id="exampleFormControlTextare21"/>
+        <input type="number" class="form-control"[(ngModel)]="responseAmount" id="exampleFormControlTextare21"/>
       </div>
     </div>
   
     <div class="modal-footer">
-      <button (click)="modal.close('Save click')" class="btn btn-outline-dark" type="button">Book</button>
+      <button (click)="modal.close('Save click')" class="btn btn-outline-dark" type="button">Send</button>
       <button (click)="modal.dismiss()" class="btn btn-outline-dark" type="button">Cancel</button>
     </div>
   </ng-template>
