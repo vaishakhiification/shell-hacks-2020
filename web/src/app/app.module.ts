@@ -14,6 +14,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { CreatePostComponent } from './components/create-post/create-post.component';
 import { ViewPostComponent } from './components/view-post/view-post.component';
 import { RespondPostComponent } from './components/respond-post/respond-post.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
