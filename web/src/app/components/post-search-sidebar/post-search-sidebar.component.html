@@ -1,0 +1,31 @@
+<div class="sidenav">
+  <div style="margin-bottom: 25px">
+    <label for="sortBy">Sort By:</label>
+    <select class="form-control" id="sortBy">
+      <option>Distance</option>
+      <option>Posted Date</option>
+    </select>
+  </div>
+  <div style="margin-bottom: 15px">
+    <label>
+      <input type="text" [(ngModel)]="searchText" placeholder="Search by Keyword">
+    </label>
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="postType" value="1" checked [(ngModel)]="postType">Requests</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="postType" value="2" [(ngModel)]="postType">Assists</label>
+  </div>
+  <div style="margin-bottom: 25px">
+    <label for="category">Select Category:</label>
+    <select class="form-control" id="category">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+  </div>
+  <button type="button"  (click)="searchPosts()" class="btn btn-outline-dark" style="width: 100%">Search</button>
+</div>

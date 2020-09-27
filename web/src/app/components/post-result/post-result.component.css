@@ -1,0 +1,25 @@
+body {
+  font-family: Arial;
+}
+
+.post {
+  border: 10px solid #3498db;
+  border-radius: 5px;
+  width: 80%;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.container {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.category {
+  padding: 3px;
+}
+
+.date {
+  color: red;
+}
