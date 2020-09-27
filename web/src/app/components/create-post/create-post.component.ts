@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Post } from '../../models/index';
+import {AgmMarker} from '@agm/core';
+import { DataService } from 'src/app/services/data.service';
+import { ConstantService } from 'src/app/services/constant.service';
 
 @Component({
   selector: 'app-create-post',
@@ -7,9 +11,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreatePostComponent implements OnInit {
 
-  constructor() { }
-
+  newPost: Post = new Post();
+  position = {
+    latitude: 51.678418,
+    longitude: 7.809007,
+  };
+  constructor(private dataService: DataService, private constantService: ConstantService) { 
+    this._getCurrentLocation();
+  }
   ngOnInit(): void {
   }
+
+  selectMarker($event: AgmMarker): void {
+    console.log('select marker: ' + $event);
+  }
+
+  _getCurrentLocation(): void {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        this._setLocation(position.coords);
+      });
+    }
+  }
+
+  _setLocation(location): void {
+    this.position = location;
+  }
+
+  createPost(){
+    this.newPost.authorApproved = false;
+    this.newPost.responderApproved = false;
+    this.newPost.postStatusId = "1";
+    this.newPost.authorName = this.constantService.currentUser.userName;
+    this.newPost.latitude = this.position.latitude;
+    this.newPost.longitude = this.position.longitude;
+    this.dataService.createPost(this.newPost);
+  }
+
+  navigateBack(){
+    
+  }
+
 
 }
