@@ -26,10 +26,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ed6e06f-91ea-412e-be78-f897ee14d910" name="Default Changelist" comment="Added components for searhing posts">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shellHacks2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shellHacks2020.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/components/search/search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/components/search/search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/node_modules/__ngcc_entry_points__.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/components/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/components/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/components/search/search.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/components/search/search.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/components/search/search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/components/search/search.component.html" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,8 +59,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/web/node_modules/typescript/lib" />
@@ -62,11 +72,50 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/src/assets" />
       <recent name="$PROJECT_DIR$/web/src/app/components/post-result" />
       <recent name="$PROJECT_DIR$/web/src/app/components" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="E2E Tests (web)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/web/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/web/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1ed6e06f-91ea-412e-be78-f897ee14d910" name="Default Changelist" comment="" />
@@ -75,6 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601147533150</updated>
       <workItem from="1601147534721" duration="15714000" />
+      <workItem from="1601200859763" duration="4080000" />
     </task>
     <task id="LOCAL-00001" summary="Adding export to models">
       <created>1601147925091</created>
@@ -122,7 +172,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -141,6 +191,7 @@
                   </entry>
                 </map>
               </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
